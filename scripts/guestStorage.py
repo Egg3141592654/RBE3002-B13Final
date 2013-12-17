@@ -1,4 +1,5 @@
 from math import sqrt
+import Queue
 
 """
 This module will be the storage protocol by which 
@@ -28,3 +29,33 @@ class ClusterPoint():
         if distance1 >= distance2:
             return self.Extrema[0]
         return self.Extrema[1]
+    
+class QueueWrapper():
+    def __init__(self):
+        """
+        This constructor is simply a initialization of the 
+        """
+        self.__queue = Queue.Queue()
+        
+    def getNext(self):
+        """
+        dequeue the first point in the list and readd it to the back
+        """
+        toRet = self.__queue.get()
+        self.__queue.put(toRet)
+        return toRet
+    
+    def enqueue(self, elt):
+        """
+        Enqueue the element passed in. This wraps put
+        """
+        self.__queue.put(elt)
+        
+    def size(self):
+        """
+        Returns teh size of the queue
+        """
+        return self.__queue.qsize() #not quite reliable by docs standard
+        
+        
+        
