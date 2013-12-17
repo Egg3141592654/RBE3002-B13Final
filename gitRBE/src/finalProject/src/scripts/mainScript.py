@@ -26,6 +26,10 @@ class GoalPosition:
         toSend.pose.orientation.w = theta
         
         self.sub.publish(toSend)
+        
+    def isCloseEnough(self, currX, currY, currW):
+        pass
+    
 
 if name=="__name__":
     setter = GoalPosition()
