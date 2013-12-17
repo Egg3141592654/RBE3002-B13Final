@@ -1,7 +1,0 @@
-set(_CATKIN_CURRENT_PACKAGE "finalProject")
-set(finalProject_MAINTAINER "eric <eric@todo.todo>")
-set(finalProject_DEPRECATED "")
-set(finalProject_VERSION "0.0.0")
-set(finalProject_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
-set(finalProject_RUN_DEPENDS "roscpp" "rospy" "std_msgs")
-set(finalProject_BUILDTOOL_DEPENDS "catkin")

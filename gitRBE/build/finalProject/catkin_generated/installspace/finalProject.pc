@@ -1,8 +1,0 @@
-prefix=/home/eric/Desktop/gitRBE/install
-
-Name: finalProject
-Description: Description of finalProject
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/eric/Desktop/gitRBE/install/lib 
-Requires: 
