@@ -20,15 +20,32 @@ class GoalPosition:
         """
         toSend = PoseStamped()
         toSend.header.frame_id = "map"
-        toSend.pose.orientation.x = x
-        toSend.pose.orientation.y = y
-        toSend.pose.orientation.z = 0
+        toSend.pose.position.x = x
+        toSend.pose.position.y = y
+        toSend.pose.position.z = 0
         toSend.pose.orientation.w = theta
         
         self.sub.publish(toSend)
 
 if name=="__name__":
+    setter = GoalPosition()
+    
     #the hard set goals we will try to go to will be set as such
+    point1X = -.695
+    point1Y = 1.393
+    point1W = .80825
+    
+    point2X = 2.487
+    point2Y = 4.308
+    point2W = .65865
+    
+    point3X = 1.579
+    point3Y = -.5466
+    point3W = .91519
+    
+    point4X = 4.7899
+    point4Y = 1.909
+    point4W = .05823
     
     #Search in a pattern around the map. This is going to be something that 
     #I think that a Z would be the most appropriate.
