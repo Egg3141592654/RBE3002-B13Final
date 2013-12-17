@@ -3,6 +3,8 @@
 import rospy
 import pdb
 
+import guestStorage
+
 from geometry_msgs.msg import PoseStamped
 from geometry_msgs.msg import PoseWithCovarianceStamped
 
