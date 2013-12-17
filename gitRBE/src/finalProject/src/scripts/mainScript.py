@@ -1,5 +1,7 @@
 import rospy
 
+import guestStorage
+
 from geometry_msgs.msg import PoseStamped
 
 class GoalPosition:
