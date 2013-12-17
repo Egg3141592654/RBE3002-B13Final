@@ -28,7 +28,10 @@ class GoalPosition:
         self.sub.publish(toSend)
         
     def isCloseEnough(self, currX, currY, currW):
-        pass
+        """
+        This method determines if we are close enough to the goal to be 
+        """
+        
     
 
 if name=="__name__":
